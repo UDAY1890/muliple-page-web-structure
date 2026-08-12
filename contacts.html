@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+     <title>Contact Us | My Awesome Website</title>
+    <meta name="description" content="Get in touch with us. Send a message, ask a question, or request a quote for our web development services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>MySite</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html" aria-current="page">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-intro">
+            <h1>Get in Touch</h1>
+            <p>Have a question or want to work together? Fill out the form below and our team will get back to you within 24 hours.</p>
+        </section>
+
+        <section id="contact-form-wrapper">
+            <form action="/submit-endpoint" method="POST">
+                
+                <fieldset>
+                    <legend>Your Details</legend>
+                    
+                    <div>
+                        <label for="user-name">Full Name:</label>
+                        <input type="text" id="user-name" name="user_name" required placeholder="Jane Doe">
+                    </div>
+
+                    <div>
+                        <label for="user-email">Email Address:</label>
+                        <input type="email" id="user-email" name="user_email" required placeholder="jane@example.com">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How can we help?</legend>
+
+                    <div>
+                        <label for="message-subject">Subject (Optional):</label>
+                        <input type="text" id="message-subject" name="message_subject" placeholder="Project Inquiry">
+                    </div>
+                    
+                    <div>
+                        <label for="user-message">Message:</label>
+                        <textarea id="user-message" name="user_message" rows="6" required placeholder="Tell us about your project..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Awesome Website. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
